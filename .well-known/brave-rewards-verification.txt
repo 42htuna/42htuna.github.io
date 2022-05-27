@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: 42htuna.github.io
-Token: 4cc62e6de43f4308ab986c1ab6ea66033f2ed33493e7f79dd35684f4bfc4d3df
+Token: fe5b0c61ac51dbf285c46a1dfc3bbd92bb419e99742ad6378b3c9d31c7c601e2
