@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakan Tuna (42htuna) - Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --container-bg: #161b22;
+            --text-color: #c9d1d9;
+            --heading-color: #58a6ff;
+            --border-color: #30363d;
+            --card-hover: #1f242c;
+            --ltc-color: #345D9D;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #8b949e;
+            font-size: 1.1em;
+            margin-top: 0;
+        }
+
+        .repo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .repo-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: background-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .repo-card:hover {
+            background-color: var(--card-hover);
+            border-color: #8b949e;
+        }
+
+        .repo-card h3 {
+            color: var(--heading-color);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .repo-card p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+
+        .donation-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #1c2128;
+            border-radius: 10px;
+            border: 1px dashed var(--heading-color);
+        }
+
+        .donation-section h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .ltc-address {
+            background-color: #0d1117;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 1.1em;
+            word-break: break-all;
+            color: var(--heading-color);
+            border: 1px solid var(--border-color);
+            margin: 15px 0;
+            user-select: all;
+        }
+
+        .qr-code {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #8b949e;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hakan Tuna (42htuna)</h1>
+            <p class="subtitle">Python & Django Developer | System Administrator</p>
+        </header>
+
+        <section>
+            <h2>🚀 Projelerim / My Repositories</h2>
+            <div class="repo-grid">
+                
+                <a href="https://github.com/42htuna/fintech" target="_blank" class="repo-card">
+                    <h3>fintech</h3>
+                    <p><strong>TR:</strong> Gelişmiş finansal algoritmalar, FIFO maliyet hesaplama ve TCMB EVDS entegrasyonlu enflasyon muhasebesi araçları.</p>
+                    <p><strong>EN:</strong> Advanced financial algorithms, FIFO cost calculation, and inflation accounting tools with CBRT integration.</p>
+                </a>
+
+                <a href="https://github.com/42htuna/offermanager" target="_blank" class="repo-card">
+                    <h3>offermanager</h3>
+                    <p><strong>TR:</strong> İşletmeler için Dockerize edilmiş, hızlı ve güvenli teklif yönetim sistemi.</p>
+                    <p><strong>EN:</strong> A Dockerized, fast, and secure offer management system for businesses.</p>
+                </a>
+
+                <a href="https://github.com/42htuna/GitTutorial" target="_blank" class="repo-card">
+                    <h3>GitTutorial</h3>
+                    <p><strong>TR:</strong> Örnek Python kodları, geliştirici eğitim notları ve pratik scriptler.</p>
+                    <p><strong>EN:</strong> Example Python codes, developer tutorial notes, and practical scripts.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="donation-section">
+            <h3>☕ Bana destek ol! Bir kahve ısmarla! / Support me! Buy me a coffee!</h3>
+            <p style="color: #8b949e; font-size: 0.9em;">Açık kaynak projelerimi faydalı bulduysanız, kripto ile destek olabilirsiniz. / If you find my open-source projects useful, you can support me via crypto.</p>
+            
+            <div class="ltc-address">
+                ltc1qay0lsapvdju3w5zzu2lwfpk6hl0plfy3zelgug
+            </div>
+            <p style="color: #8b949e; font-size: 0.8em; margin-top: -10px;">(Litecoin - LTC)</p>
+
+            <img src="ltc1qay0lsapvdju3w5zzu2lwfpk6hl0plfy3zelgug.jpg" alt="Litecoin QR Code" class="qr-code">
+        </section>
+
+        <footer>
+            <p>© 2026 Hakan (42htuna). Built with Python & Open Source Love.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
